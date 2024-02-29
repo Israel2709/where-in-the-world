@@ -4,6 +4,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { useForm } from "react-hook-form";
 import { useNavigate, Routes, Route, useLocation } from "react-router-dom";
 import { Home } from "./Pages/Home";
+import { Button } from "./Components/Button";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,6 +32,9 @@ function App() {
 
   return (
     <>
+      <Button className="text-rose-500">Click me! </Button>
+      <Button variant="primaryOutline">Click me! </Button>
+      <Button>Click me! </Button>
       <nav className="flex items-center justify-between bg-dark-blue p-4">
         <img
           src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
